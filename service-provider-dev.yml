@@ -1,0 +1,15 @@
+server:
+  port: 5003
+
+spring:
+  application:
+    name: service-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        
+provider:
+  message: Hello from service provider (dev environment)
+  version: 1.0.0-DEV
+  environment: development

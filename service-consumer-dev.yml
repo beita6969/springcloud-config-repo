@@ -1,0 +1,22 @@
+server:
+  port: 5004
+
+spring:
+  application:
+    name: service-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        
+consumer:
+  message: Hello from service consumer (dev environment)
+  version: 1.0.0-DEV
+  environment: development
+  
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
