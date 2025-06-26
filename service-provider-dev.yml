@@ -10,6 +10,6 @@ spring:
         server-addr: localhost:8848
         
 provider:
-  message: Hello from service provider (dev environment)
-  version: 1.0.0-DEV
+  message: Hello from service provider (dev environment) - UPDATED
+  version: 2.0.0-DEV
   environment: development
